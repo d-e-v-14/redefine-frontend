@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css"; 
+import { Anton, Rubik } from "next/font/google";
+import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const anton = Anton({ subsets: ["latin"], weight: ["400"] });
+const rubik = Rubik({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
 export const metadata: Metadata = {
-  title: "Redefine",
-  description: "Redefine - Frontend Application",
+  title: "Redefine 2026",
+  description: "Redefine 2026 - Frontend Application",
 };
 
 export default function RootLayout({
@@ -16,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${rubik.className} bg-[#080608] text-white`}>{children}</body>
     </html>
   );
 }
