@@ -34,3 +34,17 @@ body {
     -webkit-backdrop-filter: blur(14px);
   }
 }
+
+@keyframes bounce-diagonal {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(8px, -8px);
+  }
+}
+
+.animate-arrow {
+  animation: bounce-diagonal 2s ease-in-out infinite;
+}
+

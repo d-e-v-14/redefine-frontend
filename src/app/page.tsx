@@ -7,8 +7,7 @@ export default function Home() {
       <div className="absolute inset-0 bg-[#000000]" />
       <div className="absolute inset-y-0 right-0 w-1/2 bg-[#c1325f]" />
 
-      {/* Background artwork */}
-      <div className="absolute left-[-8%] top-[-10%] w-[50vw] h-[110vh] opacity-40 z-10 pointer-events-none">
+      <div className="absolute left-[-2%] top-[-10%] z-10 h-[800px] w-[800px] opacity-40 pointer-events-none">
         <Image
           src="/redefine-2026/Vector 32.png"
           alt="Curve"
@@ -16,7 +15,7 @@ export default function Home() {
           className="object-contain"
         />
       </div>
-      <div className="absolute left-[12%] top-[5%] w-[30vw] h-[90vh] opacity-35 z-10 pointer-events-none">
+      <div className="absolute left-[10%] top-[5%] z-10 h-[650px] w-[450px] opacity-35 pointer-events-none">
         <Image
           src="/redefine-2026/Vector 26.png"
           alt="Curve"
@@ -24,7 +23,7 @@ export default function Home() {
           className="object-contain"
         />
       </div>
-      <div className="absolute left-[2%] bottom-[12%] w-[280px] h-[400px] opacity-45 z-10 pointer-events-none">
+      <div className="absolute bottom-[12%] left-[6%] z-10 h-[400px] w-[280px] opacity-45 pointer-events-none">
         <Image
           src="/redefine-2026/Thread 1.png"
           alt="Curve"
@@ -33,7 +32,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="absolute right-[-5%] top-[2%] w-[45vw] h-[100vh] opacity-45 z-10 pointer-events-none filter brightness-0">
+      <div className="absolute right-[8%] top-[2%] z-10 h-[730px] w-[680px] opacity-45 pointer-events-none">
         <Image
           src="/redefine-2026/Vector 28.png"
           alt="Curve"
@@ -41,9 +40,27 @@ export default function Home() {
           className="object-contain"
         />
       </div>
-      <div className="absolute right-[10%] bottom-[-10%] w-[35vw] h-[90vh] opacity-40 z-10 pointer-events-none filter brightness-0">
+      <div className="absolute bottom-[-10%] right-[12%] z-10 h-[660px] w-[540px] opacity-40 pointer-events-none">
         <Image
           src="/redefine-2026/Vector 32.png"
+          alt="Curve"
+          fill
+          className="object-contain"
+        />
+      </div>
+
+      {/* Right side background threads passing through TRACKS and TEAM UP */}
+      <div className="absolute right-[12%] top-[18%] z-10 h-[680px] w-[440px] opacity-80 pointer-events-none scale-x-[-1] rotate-[22deg]">
+        <Image
+          src="/redefine-2026/Thread 1.png"
+          alt="Curve"
+          fill
+          className="object-contain"
+        />
+      </div>
+      <div className="absolute right-[2%] top-[25%] z-10 h-[580px] w-[360px] opacity-70 pointer-events-none rotate-[-12deg]">
+        <Image
+          src="/redefine-2026/Thread 1.png"
           alt="Curve"
           fill
           className="object-contain"
@@ -62,7 +79,7 @@ export default function Home() {
       </div>
 
       <div className="absolute right-[2.2%] top-[2.7%] z-50 flex items-center gap-3">
-        <div className="absolute right-[110px] top-[40px] z-40 w-[220px] h-[200px] pointer-events-none">
+        <div className="absolute right-[110px] top-[40px] z-40 h-[200px] w-[220px] pointer-events-none animate-arrow">
           <Image
             src="/redefine-2026/image 5.png"
             alt="Pointer Arrow"
@@ -70,8 +87,7 @@ export default function Home() {
             className="object-contain"
           />
         </div>
-        {/* Register Button Image */}
-        <a href="#register" className="relative block hover:scale-[1.02] transition-transform duration-200">
+        <a href="#register" className="relative block transition-transform duration-200 hover:scale-[1.02]">
           <Image
             src="/redefine-2026/Group 12.png"
             alt="Register Now"
@@ -83,128 +99,108 @@ export default function Home() {
         </a>
       </div>
 
-      <div className="pointer-events-none absolute right-[2.6%] top-[18%] z-30 h-[180px] w-[180px] rounded-full border-[3px] border-[#000000] border-dashed opacity-80" />
-      <div className="pointer-events-none absolute right-[11%] top-[12%] z-30 h-[26px] w-[26px] rotate-45 border-[3px] border-[#000000] opacity-80" />
-      <div className="pointer-events-none absolute right-[14%] top-[18%] z-30 h-[22px] w-[22px] rotate-[40deg] border-[3px] border-[#000000] opacity-80" />
-      <div className="pointer-events-none absolute right-[17%] top-[8.8%] z-30 h-[20px] w-[20px] rounded-full border-[3px] border-[#000000] opacity-80" />
-      <div className="pointer-events-none absolute right-[20%] top-[18.6%] z-30 h-[46px] w-[46px] rotate-[58deg] border-[3px] border-[#000000] opacity-80" />
-
-      <div className="absolute left-1/2 top-[6%] z-30 -translate-x-1/2 w-[90%] max-w-[620px]">
+      <div className="absolute left-1/2 top-[6%] z-40 w-[90%] max-w-[620px] -translate-x-1/2">
         <Image
-          src="/redefine-2026/REDEFINE-1.png"
+          src="/redefine-2026/REDEFINE.png"
           alt="REDEFINE"
           width={781}
           height={120}
-          className="w-full h-auto"
+          className="h-auto w-full"
           priority
         />
       </div>
 
-      <div className="absolute left-[8%] top-[38%] z-40 w-[220px] h-[66px]">
+      <a
+        href="#timeline"
+        className="absolute top-[36%] z-40 block h-[66px] w-[220px] transition-all duration-300 hover:scale-105 hover:rotate-1"
+        style={{ left: "50%", marginLeft: "-34vw" }}
+      >
         <Image
           src="/redefine-2026/Group 28.png"
           alt="Timeline"
           fill
           className="object-contain"
         />
-      </div>
+      </a>
 
-      <div className="absolute left-[16%] top-[58%] z-40 flex items-center gap-[4px]">
-        <div className="relative w-[34px] h-[58px] rotate-[-5deg] translate-y-[2px]">
+      <a
+        href="#faq"
+        className="absolute top-[56%] z-40 flex items-center gap-[4px] transition-all duration-300 hover:scale-105 hover:-rotate-1"
+        style={{ left: "50%", marginLeft: "-34vw" }}
+      >
+        <div className="relative h-[58px] w-[34px] rotate-[-5deg] translate-y-[2px]">
           <Image src="/redefine-2026/F.png" alt="F" fill className="object-contain" />
         </div>
-        <div className="relative w-[36px] h-[58px] rotate-[6deg] -translate-y-[1px]">
+        <div className="relative h-[58px] w-[36px] rotate-[6deg] -translate-y-[1px]">
           <Image src="/redefine-2026/A.png" alt="A" fill className="object-contain" />
         </div>
-        <div className="relative w-[40px] h-[58px] rotate-[-3deg] translate-y-[3px]">
+        <div className="relative h-[58px] w-[40px] rotate-[-3deg] translate-y-[3px]">
           <Image src="/redefine-2026/Q.png" alt="Q" fill className="object-contain" />
         </div>
-      </div>
+      </a>
 
-      <div className="absolute right-[18%] top-[32%] z-40 flex items-center gap-[4px]">
-        <div className="relative w-[34px] h-[58px] rotate-[4deg] -translate-y-[1px]">
+      <a
+        href="#tracks"
+        className="absolute top-[36%] z-40 flex items-center gap-[4px] transition-all duration-300 hover:scale-105 hover:rotate-1"
+        style={{ left: "50%", marginLeft: "12vw" }}
+      >
+        <div className="relative h-[58px] w-[34px] rotate-[4deg] -translate-y-[1px]">
           <Image src="/redefine-2026/T.png" alt="T" fill className="object-contain" />
         </div>
-        <div className="relative w-[35px] h-[58px] rotate-[-6deg] translate-y-[3px]">
+        <div className="relative h-[58px] w-[35px] rotate-[-6deg] translate-y-[3px]">
           <Image src="/redefine-2026/R.png" alt="R" fill className="object-contain" />
         </div>
-        <div className="relative w-[35px] h-[58px] rotate-[3deg] -translate-y-[2px]">
+        <div className="relative h-[58px] w-[35px] rotate-[3deg] -translate-y-[2px]">
           <Image src="/redefine-2026/A-1.png" alt="A" fill className="object-contain" />
         </div>
-        <div className="relative w-[36px] h-[58px] rotate-[-5deg] translate-y-[1px]">
+        <div className="relative h-[58px] w-[36px] rotate-[-5deg] translate-y-[1px]">
           <Image src="/redefine-2026/C.png" alt="C" fill className="object-contain" />
         </div>
-        <div className="relative w-[36px] h-[58px] rotate-[6deg] -translate-y-[3px]">
+        <div className="relative h-[58px] w-[36px] rotate-[6deg] -translate-y-[3px]">
           <Image src="/redefine-2026/K.png" alt="K" fill className="object-contain" />
         </div>
-        <div className="relative w-[32px] h-[58px] rotate-[-2deg] translate-y-[2px]">
+        <div className="relative h-[58px] w-[32px] rotate-[-2deg] translate-y-[2px]">
           <Image src="/redefine-2026/S.png" alt="S" fill className="object-contain" />
         </div>
-      </div>
+      </a>
 
-      <div className="absolute right-[8%] top-[52%] z-40 flex items-center gap-[4px]">
-        <div className="relative w-[34px] h-[58px] rotate-[-4deg] translate-y-[2px]">
+      <a
+        href="#team-up"
+        className="absolute top-[56%] z-40 flex items-center gap-[4px] transition-all duration-300 hover:scale-105 hover:-rotate-1"
+        style={{ left: "50%", marginLeft: "12vw" }}
+      >
+        <div className="relative h-[58px] w-[34px] rotate-[-4deg] translate-y-[2px]">
           <Image src="/redefine-2026/T-1.png" alt="T" fill className="object-contain" />
         </div>
-        <div className="relative w-[34px] h-[58px] rotate-[5deg] -translate-y-[2px]">
+        <div className="relative h-[58px] w-[34px] rotate-[5deg] -translate-y-[2px]">
           <Image src="/redefine-2026/E.png" alt="E" fill className="object-contain" />
         </div>
-        <div className="relative w-[35px] h-[58px] rotate-[-3deg] translate-y-[1px]">
+        <div className="relative h-[58px] w-[35px] rotate-[-3deg] translate-y-[1px]">
           <Image src="/redefine-2026/A-2.png" alt="A" fill className="object-contain" />
         </div>
-        <div className="relative w-[48px] h-[58px] rotate-[6deg] -translate-y-[1px] mr-[10px]">
+        <div className="relative mr-[10px] h-[58px] w-[48px] rotate-[6deg] -translate-y-[1px]">
           <Image src="/redefine-2026/M.png" alt="M" fill className="object-contain" />
         </div>
-        <div className="relative w-[50px] h-[65px] rotate-[-6deg] translate-y-[3px]">
+        <div className="relative h-[65px] w-[50px] rotate-[-6deg] translate-y-[3px]">
           <Image src="/redefine-2026/U.png" alt="U" fill className="object-contain" />
         </div>
-        <div className="relative w-[34px] h-[58px] rotate-[4deg] -translate-y-[2px]">
+        <div className="relative h-[58px] w-[34px] rotate-[4deg] -translate-y-[2px]">
           <Image src="/redefine-2026/P.png" alt="P" fill className="object-contain" />
         </div>
-      </div>
+      </a>
 
-      <div className="absolute left-1/2 bottom-[45px] z-30 -translate-x-1/2">
+      <div className="absolute bottom-0 left-1/2 z-30 -translate-x-1/2">
         <HeroGraphic />
       </div>
 
-      <div className="absolute inset-x-0 bottom-0 z-50 flex h-[92px] items-center justify-between px-[2.8%] pb-4 bg-black border-t border-white/5">
-        <div className="flex items-center gap-4">
-          <Image
-            src="/redefine-2026/image 2.png"
-            alt="Redefine Logo"
-            width={64}
-            height={62}
-            className="h-auto w-[64px]"
-          />
-        </div>
-
-        <div className="flex items-center gap-14 text-white">
-          <span className="relative text-[0.9rem] font-black uppercase tracking-[0.3em] cursor-pointer">
-            TIMELINE
-            {/* Custom hand-drawn style underline loop */}
-            <svg className="absolute bottom-[-12px] left-[-10px] w-[120%] h-[15px] text-white" viewBox="0 0 100 15" fill="none" stroke="currentColor">
-              <path
-                d="M 5 6 L 85 6 C 92 6, 96 2, 94 9 C 92 13, 88 13, 88 9 C 88 5, 94 5, 98 9"
-                strokeWidth="2.2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </span>
-          <span className="text-[0.9rem] font-black uppercase tracking-[0.3em] opacity-80 hover:opacity-100 transition-opacity cursor-pointer">
-            TRACKS
-          </span>
-          <span className="text-[0.9rem] font-black uppercase tracking-[0.3em] opacity-80 hover:opacity-100 transition-opacity cursor-pointer">
-            TEAM UP
-          </span>
-          <span className="text-[0.9rem] font-black uppercase tracking-[0.3em] opacity-80 hover:opacity-100 transition-opacity cursor-pointer">
-            FAQ
-          </span>
-        </div>
-
-        <a href="#register" className="rounded-full border-[2px] border-white/80 bg-black px-7 py-3 text-[0.9rem] font-black uppercase tracking-[0.24em] text-white hover:bg-white hover:text-black transition-colors duration-200 shadow-[0_0_10px_rgba(255,255,255,0.05)]">
-          REGISTER
-        </a>
+      {/* Polygon 22-1 at the end of the shoulder */}
+      <div className="absolute right-0 bottom-0 z-35 left-[50vw] h-[12.5vw] pointer-events-none">
+        <Image
+          src="/redefine-2026/Polygon 22-1.png"
+          alt="Shoulder end polygon"
+          fill
+          className="object-fill"
+        />
       </div>
     </main>
   );
