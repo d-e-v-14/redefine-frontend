@@ -67,37 +67,52 @@ export default function SplitBackground() {
         />
       </div>
 
-      {/* REDEFINE Filled */}
-      <div className="pointer-events-none absolute left-1/2 top-[25%] z-10 -translate-x-1/2">
-        <div className="relative h-[130px] w-[650px]">
-          <Image
-            src="/redefine-2026/solid.svg"
-            alt=""
-            fill
-            priority
-            className="object-contain -translate-x-[4px] -translate-y-[80%] select-none"
-          />
-        </div>
-      </div>
+{/* Human Figure */}
+<div className="absolute bottom-0 left-7 z-20 w-screen">
+  <Image
+    src="/redefine-2026/Homepage (4).svg"
+    alt="Homepage"
+    width={1920}
+    height={980}
+    priority
+    className="w-screen h-screen object-bottom"
+  />
+</div>
+
 
     
       <div className="absolute inset-x-0 bottom-0 z-30 flex justify-center">
         <div className="relative h-[120vh] w-[70vw]">
 
-          {/* REDEFINE Outline */}
-          <div className="pointer-events-none absolute left-1/2 top-[25%] z-40 -translate-x-1/2">
-            <div className="relative h-[130px] w-[650px]">
-              <Image
-                src="/redefine-2026/REDEFINE.svg"
-                alt="REDEFINE"
-                fill
-                priority
-                className="object-contain select-none"
-              />
-            </div>
+       
+      {/* REDEFINE Group (behind human) */}
+      <div className="pointer-events-none absolute left-1/2 top-[22%] -translate-x-1/2 z-10">
+        <div className="relative h-[130px] w-[650px]">
+
+          {/* Filled */}
+          <div className="absolute inset-0 translate-x-[4px] translate-y-[4px]">
+            <Image
+              src="/redefine-2026/solid.svg"
+              alt=""
+              fill
+              priority
+              className="object-contain select-none"
+            />
           </div>
 
+          {/* Outline */}
+          <div className="absolute inset-0">
+            <Image
+              src="/redefine-2026/REDEFINE.svg"
+              alt="REDEFINE"
+              fill
+              priority
+              className="object-contain select-none"
+            />
+          </div>
 
+        </div>
+      </div>
           {/* Reimagine */}
           <div className="absolute left-[50%] top-[55%] z-[60] -translate-x-1/2">
             <Image

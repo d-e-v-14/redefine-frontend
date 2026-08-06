@@ -5,44 +5,33 @@ import { motion } from "framer-motion";
 
 export default function RegisterButton() {
   return (
-    <motion.button
-      whileHover={{
-        scale: 1.05,
-        y: -2,
-      }}
-      whileTap={{
-        scale: 0.96,
-      }}
-      transition={{
-        duration: 0.2,
-      }}
-      className="
-        fixed
-        top-6
-        right-6
-        z-50
-        cursor-pointer
-        select-none
-      "
-    >
-      <div className="relative w-[180px] md:w-[210px] lg:w-[230px] xl:w-[250px]">
-        {/* Register Image */}
-        <Image
-          src="/redefine-2026/register.svg"
-          alt="Register"
-          width={220}
-          height={80}
-          priority
-          className="
-            w-full
-            h-auto
-            pointer-events-none
-            select-none
-          "
-        />
+    <div className="fixed top-6 right-6 z-50">
+      {/* Animated Button */}
+      <motion.button
+        whileHover={{
+          scale: 1.05,
+          y: -2,
+        }}
+        whileTap={{
+          scale: 0.96,
+        }}
+        transition={{ duration: 0.2 }}
+        className="cursor-pointer select-none"
+      >
+        <div className="relative w-[180px] md:w-[210px] lg:w-[230px] xl:w-[250px]">
+          <Image
+            src="/redefine-2026/register.svg"
+            alt="Register"
+            width={220}
+            height={80}
+            priority
+            className="w-full h-auto pointer-events-none select-none"
+          />
+        </div>
+      </motion.button>
 
-        {/* Animated Dotted Arrow */}
-       <div className="absolute inset-0 pointer-events-none">
+      {/* Arrow (doesn't animate) */}
+      <div className="absolute inset-0 pointer-events-none">
         <Image
           src="/redefine-2026/arrow.svg"
           alt="Arrow"
@@ -50,13 +39,12 @@ export default function RegisterButton() {
           priority
           className="
             object-contain
-            scale-[2.0]
+            scale-[1.6]
             -translate-x-[52%]
             translate-y-[6rem]
           "
         />
       </div>
-      </div>
-    </motion.button>
+    </div>
   );
 }
